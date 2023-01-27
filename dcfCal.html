@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dcfCal.css"></script>
+    <title>Discount Counted Cashflow Model</title>
+</head>
+<div style="margin-left: 25%; color: cadetblue;"><h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">DCF Model</h1></div>
+<body>
+    <form style="margin-left: 25%; font-weight: 700; font-size: larger; word-spacing: 100%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <label for="revenue" >Revenue:</label>
+        <input style="margin-bottom: 3%;" type="text" id="revenue" name="revenue" value="100">
+        <br>
+        <label for="growth">Growth Rate:</label>
+        <input style="margin-bottom: 3%;" type="text" id="growth" name="growth" value="0.05">
+        <br>
+        <label for="discount_rate">Discount Rate:</label>
+        <input style="margin-bottom: 3%;" type="text" id="discount_rate" name="discount_rate" value="0.1">
+        <br>
+        <label for="years">Number of Years:</label>
+        <input style="margin-bottom: 3%;" type="text" id="years" name="years" value="5">
+        <br>
+        <label for="expenses">Expenses:</label>
+        <input style="margin-bottom: 3%;" type="text" id="expenses" name="expenses" value="50">
+        <br>
+        <label for="capEx">Capital Expenditures:</label>
+        <input style="margin-bottom: 3%;" type="text" id="capEx" name="capEx" value="10">
+        <br>
+        <label for="workingCapital">Working Capital:</label>
+        <input style="margin-bottom: 3%;" type="text" id="workingCapital" name="workingCapital" value="5">
+        <br>
+        <label for="intrinsic_value">Intrinsic Value:</label>
+        <input style="margin-bottom: 3%;" type="text" id="intrinsic_value" name="intrinsic_value" readonly>
+<div>   <input  style="border-radius: 10%; margin-top: 3%;  width: 75%; " type="button" value="Calculate" onclick="calculateIntrinsicValue()"></div>
+      </form>
+      
+      <button style="margin-left: 75%; margin-top: 5%;"  onclick="resetCalculator()">Reset</button>
+
+      <script src="dcfCal.js"></script>
+</body>
+</html>
